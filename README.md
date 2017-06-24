@@ -1,21 +1,8 @@
-# Apollo Client Error Template
+# react-apollo Issue #660
 
-Welcome! If you are here then you were likely referred to this repo when reporting an error to [`apollographql/apollo-client`][1]. The core team is invested in making the best client for GraphQL possible, so when you hit an error it is important to the team that the error is resolved as soon as possible.
+This repository was created to reproduce the issue described here.
 
-Unfortunately, describing an error in GitHub is often not enough to truly understand the reported issue. By creating a small reproduction test case using this template repo the Apollo Client team will be able to identify and fix your error much faster then they could without.
+https://github.com/apollographql/react-apollo/issues/660
 
-This repo was created with [`create-react-app`][2] for a great developer experience. If you are not using React then a small reproduction case with your framework of choice would go a long way.
-
-To get started writing your error case just clone this repository to your GitHub account, install all dependencies with `npm install`, start the development server with `npm start`, make the changes that will reproduce this error locally, and push your changes to GitHub where the `apollo-client` team can see them.
-
-To make changes in the GraphQL schema make sure to look at the `./src/graphql` folder where we define a GraphQL schema using [GraphQL.js][3] which will run in the browser.
-
-[1]: https://github.com/apollographql/apollo-client
-[2]: https://github.com/facebookincubator/create-react-app
-[3]: http://graphql.org/graphql-js/
-
-# Deploy to Github Pages
-You can deploy your built error demo to gh-pages branch by running:
-```
-npm run deploy YOUR_GIT_REMOTE
-```
+**Note:** This commit takes the original changes to reproduce this issue and rebases them on top of the latest [react-apollo-error-template](https://github.com/apollographql/react-apollo-error-template/tree/61cd554e3c9a0b4f77f1697a50f2a05cb6184353). The latest version of the template, as of this writing, uses version 2 of `react-apollo` which fixes the behavior described in issue [#660](https://github.com/apollographql/react-apollo/issues/660). View commit [9fff012](https://github.com/newoga/react-apollo-issue-660/tree/9fff01256f2fff935d63bf64da7884a29fead2c1))
+the see the reproduction of the behavior in version 1 of `react-apollo`.

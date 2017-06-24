@@ -4,6 +4,7 @@ import gql from "graphql-tag";
 
 class App extends Component {
   render() {
+    console.log('App rendering...');
     const { data: { loading, people } } = this.props;
     return (
       <main>
@@ -36,13 +37,22 @@ class App extends Component {
   }
 }
 
-export default graphql(
-  gql`
-    query ErrorTemplate {
-      people {
-        id
-        name
-      }
+const query = gql`
+  query ErrorTemplate {
+    people {
+      id
+      name
     }
-  `
-)(App);
+  }
+`;
+
+export default graphql(query, {
+  options() {
+    console.log('options() called...');
+    return {};
+  },
+  props(props) {
+    console.log('props() called...');
+    return props;
+  },
+})(App)
